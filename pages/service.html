@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pages/input.css">
+</head>
+<body>
+
+  <nav class="bg-white shadow-lg rounded-2xl ">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7">
+                <div>
+                    <!-- Website Logo -->
+                    <a href="../index.html" class="flex items-center py-4 px-2">
+                        <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+                        <span class="font-semibold text-blue-800 text-lg"> Rightup&nbsp;</span>
+
+                        <span class="font-bold text-red-700 text-lg">Realty</span>
+                    </a>
+                </div>
+                <!-- Primary Navbar items -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html"
+                        class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold ">Home</a>
+                    <a href="/pages/service.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="/pages/property.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Properties</a>
+                    <a href="/pages/contact-us.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Contact
+                        Us</a>
+                </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3 ">
+                <a href=""
+                    class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log
+                    In</a>
+                <a href=""
+                    class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign
+                    Up</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+        <ul class=" ">
+            <li class="active"><a href="../index.html"
+                    class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+            <li><a href="/pages/service.html"
+                    class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Services</a></li>
+            <li><a href="/pages/property.html"
+                    class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Properties</a></li>
+            <li><a href="/pages/contact-us.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact
+                    Us</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</nav>
+<section class="mobile-sticky md:hidden mr-3 ">
+   
+    <ul class="  fixed  grid grid-cols-4 w-full  overflow-hidden bottom-0 justify-center text-center items-center font-medium  rounded-xl text-white bg-blue-800 " >
+        <li class="px-2  ">
+            <a href="http://"  class="grid">
+                <i class='bx bx-home'></i>
+                <span>Home</span>
+            </a>
+            </li>
+        <li class="p-2  "  class="grid">
+            <a href="http://">
+                <i class='bx bx-buildings'></i>
+                <span>Properties</span>
+            </a>
+            </li>
+        <li class="p-2  ">
+            <a  href="http://" class="grid">
+                <i class='bx bx-user'></i>
+                <span>About</span>
+            </a>
+            </li>
+        <li class="p-2  ">
+            <a href="http://"  class="grid">
+                <i class='bx bx-chat'></i>
+                <span>Inquary</span>
+            </a>
+            </li>
+        
+    </ul>
+    
+</section>
+     <!-- Services Section Start -->
+     <section id="services" class="py-24">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Services</h2>
+          </div>
+          <div class="flex flex-wrap">
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-cog"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">Web Development</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="0.6s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-bar-chart"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">Graphic Design</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="0.9s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-briefcase"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">Business Branding</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="1.2s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-pencil-alt"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">Content Writing</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="1.5s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-mobile"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">App Development</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+            <!-- Services item -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+              <div class="m-4 wow fadeInRight" data-wow-delay="1.8s">
+                <div class="icon text-5xl">
+                  <i class="lni lni-layers"></i>
+                </div>
+                <div>
+                  <h3 class="service-title">Digital Marketing</h3>
+                  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
+                    incidunt laborum aspernatur...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section End -->
+</body>
+</html>

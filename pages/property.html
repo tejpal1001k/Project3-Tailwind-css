@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pages/input.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="antialiased bg-gray-200 text-gray-900 font-sans p-3">
+    
+
+    <nav class="bg-white shadow-lg rounded-2xl ">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="../index.html" class="flex items-center py-4 px-2">
+                            <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+                            <span class="font-semibold text-blue-800 text-lg"> Rightup&nbsp;</span>
+
+                            <span class="font-bold text-red-700 text-lg">Realty</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="../index.html"
+                            class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold ">Home</a>
+                        <a href="/pages/service.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Services</a>
+                        <a href="/pages/property.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Properties</a>
+                        <a href="/pages/contact-us.html"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href=""
+                        class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log
+                        In</a>
+                    <a href=""
+                        class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign
+                        Up</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class=" ">
+                <li class="active"><a href="../index.html"
+                        class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+                <li><a href="/pages/service.html"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Services</a></li>
+                <li><a href="/pages/property.html"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Properties</a></li>
+                <li><a href="/pages/contact-us.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+    <section class="mobile-sticky md:hidden mr-3 ">
+       
+        <ul class="  fixed  grid grid-cols-4 w-full  overflow-hidden bottom-0 justify-center text-center items-center font-medium  rounded-xl text-white bg-blue-800 " >
+            <li class="px-2  ">
+                <a href="http://"  class="grid">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </a>
+                </li>
+            <li class="p-2  "  class="grid">
+                <a href="http://">
+                    <i class='bx bx-buildings'></i>
+                    <span>Properties</span>
+                </a>
+                </li>
+            <li class="p-2  ">
+                <a  href="http://" class="grid">
+                    <i class='bx bx-user'></i>
+                    <span>About</span>
+                </a>
+                </li>
+            <li class="p-2  ">
+                <a href="http://"  class="grid">
+                    <i class='bx bx-chat'></i>
+                    <span>Inquary</span>
+                </a>
+                </li>
+            
+        </ul>
+        
+    </section>
+
+
+    <!-- Appartments -->
+
+    <div class="container  mx-auto">
+        <div class="text-center text-blue-600 mb-4 font-bold mt-4 text-2xl">
+            <a href="/pages/appartments.html">Best Appartments</a>
+            <!-- <h1>Best Appartments</h1> -->
+        </div>
+        <div class="text-right text-blue-600 p-3">
+            <a href="a.html">See more &rarr;</a>
+        </div>
+        <!-- <h5 class="">see more</h5> -->
+        <div class="flex flex-wrap bg-slate-100 ">
+
+          
+
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+          
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            
+
+
+
+            
+
+        </div>
+        
+
+
+    </div>
+
+    <!-- Villas -->
+
+    <div class="container  mx-auto">
+        <div class="text-center text-blue-600 mb-4 font-bold mt-4 text-2xl">
+            <a href="a.html">Villas</a>
+            <!-- <h1>Best Appartments</h1> -->
+        </div>
+        <div class="text-right text-blue-600 p-3">
+            <a href="a.html">See more &rarr;</a>
+        </div>
+        <!-- <h5 class="">see more</h5> -->
+        <div class="flex flex-wrap bg-slate-100 ">
+
+          
+
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+          
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            
+
+
+
+            
+
+        </div>
+        
+
+
+    </div>
+
+    <!-- Plots -->
+
+    <div class="container  mx-auto">
+        <div class="text-center text-blue-600 mb-4 font-bold mt-4 text-2xl">
+            <a href="a.html">Plots</a>
+            <!-- <h1>Best Appartments</h1> -->
+        </div>
+        <div class="text-right text-blue-600 p-3">
+            <a href="a.html">See more &rarr;</a>
+        </div>
+        <!-- <h5 class="">see more</h5> -->
+        <div class="flex flex-wrap bg-slate-100 ">
+
+          
+
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+          
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 md:p-3 px-0.5 ">
+                <a href="" class=" block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                    <div class="relative  overflow-hidden">
+                        <img src="/img/p1.jpg" alt="">
+                    </div>
+                    <div class="md:p-2 p-1">
+                        <span
+                            class="inline-block md:px-2 px-1 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>
+                        <div class="flex items-center">
+
+                            <h2 class="md:mb-1 mt-1 md-1 text-blue-600 text-base md:text-xl font-semibold">Rightup Realty</h2>
+                            <div class="flex items-center md:p-1">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" mx-1   border-t border-b text-sm text-blue-600 font-semibold">
+
+            
+                        <div class=" flex">
+                            <div class="w-3">
+                                <img src="/img/pin.png" alt="">
+                            </div>
+                            <div class="mx-2">
+                                <p>Kardhani Prime, Kalwar Road</p>
+                            </div>
+                        </div>
+
+                        <div class=" grid grid-flow-col  md:m-1 ">
+                            <div class="w-3 m-2 md:w-6 flex">
+                                <img src="/img/bedroom.png" alt="">
+                                <span class="mx-2 pt-2">4BHK</span>
+                            </div>
+                            <div class=" w-3 m-2 md:w-6 flex">
+                                <img src="/img/area.png" alt="">
+                                <span class="mx-2 pt-2">5000sq.ft</span>
+                            </div>
+                        </div>
+                        <div class="  grid grid-flow-col mx-2">
+                            <div class=" flex m-2 w-3">
+                                <img src="/img/keys.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                            <div class=" flex m-2 w-4 md:w-6">
+                                <img src="/img/bus-stop.png" alt="">
+                                <span class="mx-1">Own</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-1">
+
+                            <button type="button"
+                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get-Price</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            
+
+
+
+            
+
+        </div>
+        
+
+
+    </div>
+</body>
+</html>
